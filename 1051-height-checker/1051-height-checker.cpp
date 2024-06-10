@@ -2,10 +2,9 @@ class Solution {
 public:
     int heightChecker(vector<int>& heights) {
         int n = heights.size();
-        vector<int> expected,temp;
-        temp = heights;
-        sort(temp.begin(),temp.end());
-        expected = temp;
+        vector<int> expected;
+        expected = heights;
+        sort(expected.begin(),expected.end());
         int count = 0;
         for (int i=0; i<n; i++)
         {
