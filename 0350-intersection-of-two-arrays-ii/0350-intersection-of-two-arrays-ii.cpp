@@ -9,8 +9,11 @@ public:
         vector<int> ans;
         for(int i: nums2)
         {
-            if(n1[i]-->0)
+            if(n1[i] > 0)
+            {
                 ans.push_back(i);
+                n1[i]--;
+            }
         }
         return ans;
     }
